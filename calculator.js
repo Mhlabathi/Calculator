@@ -94,10 +94,7 @@ operatorBtns.forEach(btn =>{
         }
         else if(answer != undefined){
             operator = e.target.textContent;
-            answer = operate(operator, Number(answer), Number(number1));
-            display.textContent = answer;
             number2 = answer; //to free number1 variable so that we use it on the next number input after operation is clicked
-            number1 = '';
         }
         else{
             operator = e.target.textContent;
